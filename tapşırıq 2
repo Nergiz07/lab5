@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <title>Məhsullar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="card">
+        <div class="img-box">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+            <button>Click</button>
+        </div>
+        <div class="info">
+            <p>Məhsul 1</p>
+            <span>10 AZN</span>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="img-box">
+            <<img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470">
+            <button>Click</button>
+        </div>
+        <div class="info">
+            <p>Məhsul 2</p>
+            <span>15 AZN</span>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="img-box">
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+            <button>Click</button>
+        </div>
+        <div class="info">
+            <p>Məhsul 3</p>
+            <span>20 AZN</span>
+        </div>
+    </div>
+
+</div>
+<div class="container">
+
+    <div class="card">
+        <div class="img-box">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+            <button>Click</button>
+        </div>
+        <div class="info">
+            <p>Məhsul 1</p>
+            <span>10 AZN</span>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="img-box">
+            <<img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470">
+            <button>Click</button>
+        </div>
+        <div class="info">
+            <p>Məhsul 2</p>
+            <span>15 AZN</span>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="img-box">
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+            <button>Click</button>
+        </div>
+        <div class="info">
+            <p>Məhsul 3</p>
+            <span>20 AZN</span>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
+
+
+
+body {
+    background: #dcdcdc;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.img-box {
+    position: relative;
+}
+
+.img-box img {
+    width: 100%;
+    display: block;
+}
+
+.img-box button {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.info span {
+    color: green;
+    font-weight: bold;
+}
